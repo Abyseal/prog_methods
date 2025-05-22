@@ -1,0 +1,617 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Лабораторная работа №1: Файл /home/tide/Desktop/programming_methods/git-folders/lab-1/experiment.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Лабораторная работа №1<span id="projectnumber">&#160;Горелов С. Ю. СКБ222</span>
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.14.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('experiment_8cpp.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle"><div class="title">Файл /home/tide/Desktop/programming_methods/git-folders/lab-1/experiment.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;chrono&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;iterator&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;tuple&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;cstdlib&gt;</code><br />
+<code>#include &lt;matplot/matplot.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSoldier.html">Soldier</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Строка из датасета  <a href="structSoldier.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a0833866db39ce7c6349e6580405f9cbf" id="r_a0833866db39ce7c6349e6580405f9cbf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0833866db39ce7c6349e6580405f9cbf">operator&lt;</a> (const <a class="el" href="structSoldier.html">Soldier</a> &amp;a, const <a class="el" href="structSoldier.html">Soldier</a> &amp;b)</td></tr>
+<tr class="memdesc:a0833866db39ce7c6349e6580405f9cbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перегрузка оператора "&lt;" для сравнения объектов <a class="el" href="structSoldier.html" title="Строка из датасета">Soldier</a>.  <br /></td></tr>
+<tr class="separator:a0833866db39ce7c6349e6580405f9cbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad51dd6cc97a14667b99fab48f75bbb8a" id="r_ad51dd6cc97a14667b99fab48f75bbb8a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad51dd6cc97a14667b99fab48f75bbb8a">operator&gt;</a> (const <a class="el" href="structSoldier.html">Soldier</a> &amp;a, const <a class="el" href="structSoldier.html">Soldier</a> &amp;b)</td></tr>
+<tr class="memdesc:ad51dd6cc97a14667b99fab48f75bbb8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перегрузка оператора "&lt;" для сравнения объектов  <br /></td></tr>
+<tr class="separator:ad51dd6cc97a14667b99fab48f75bbb8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53b71b58913f4c835865a2c6273a87df" id="r_a53b71b58913f4c835865a2c6273a87df"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53b71b58913f4c835865a2c6273a87df">operator&lt;=</a> (const <a class="el" href="structSoldier.html">Soldier</a> &amp;a, const <a class="el" href="structSoldier.html">Soldier</a> &amp;b)</td></tr>
+<tr class="memdesc:a53b71b58913f4c835865a2c6273a87df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перегрузка оператора "&gt;" для сравнения объектов  <br /></td></tr>
+<tr class="separator:a53b71b58913f4c835865a2c6273a87df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0497c92b072993e3068fa2cdbd70ee45" id="r_a0497c92b072993e3068fa2cdbd70ee45"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0497c92b072993e3068fa2cdbd70ee45">operator&gt;=</a> (const <a class="el" href="structSoldier.html">Soldier</a> &amp;a, const <a class="el" href="structSoldier.html">Soldier</a> &amp;b)</td></tr>
+<tr class="memdesc:a0497c92b072993e3068fa2cdbd70ee45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перегрузка оператора "&gt;=" для сравнения объектов  <br /></td></tr>
+<tr class="separator:a0497c92b072993e3068fa2cdbd70ee45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a41066027416e4cb2d95c918e39d539" id="r_a9a41066027416e4cb2d95c918e39d539"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a41066027416e4cb2d95c918e39d539">split</a> (const std::string &amp;str, char del=' ')</td></tr>
+<tr class="memdesc:a9a41066027416e4cb2d95c918e39d539"><td class="mdescLeft">&#160;</td><td class="mdescRight">Разделить строку по разделителю  <br /></td></tr>
+<tr class="separator:a9a41066027416e4cb2d95c918e39d539"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd77fabcf40d834e306b649d745b8166" id="r_abd77fabcf40d834e306b649d745b8166"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structSoldier.html">Soldier</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd77fabcf40d834e306b649d745b8166">read_csv</a> (const std::string &amp;filename)</td></tr>
+<tr class="memdesc:abd77fabcf40d834e306b649d745b8166"><td class="mdescLeft">&#160;</td><td class="mdescRight">Считать датасет военнослужащих  <br /></td></tr>
+<tr class="separator:abd77fabcf40d834e306b649d745b8166"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ddbef7195d52bb61de2195823a00d42" id="r_a4ddbef7195d52bb61de2195823a00d42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ddbef7195d52bb61de2195823a00d42">write_csv</a> (std::string filename, const std::vector&lt; <a class="el" href="structSoldier.html">Soldier</a> &gt; &amp;data)</td></tr>
+<tr class="memdesc:a4ddbef7195d52bb61de2195823a00d42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Записать вектор данных в .csv файл  <br /></td></tr>
+<tr class="separator:a4ddbef7195d52bb61de2195823a00d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a347ba8cb8f50c282fe1086a28fa844fd" id="r_a347ba8cb8f50c282fe1086a28fa844fd"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:a347ba8cb8f50c282fe1086a28fa844fd"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a347ba8cb8f50c282fe1086a28fa844fd">operator&lt;&lt;</a> (std::ostream &amp;os, const std::vector&lt; T &gt; &amp;vec)</td></tr>
+<tr class="memdesc:a347ba8cb8f50c282fe1086a28fa844fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перегрузка оператора&lt;&lt; для вывода контейнера  <br /></td></tr>
+<tr class="separator:a347ba8cb8f50c282fe1086a28fa844fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0ded302550a2b9c414fde3982743d47" id="r_ab0ded302550a2b9c414fde3982743d47"><td class="memTemplParams" colspan="2">template&lt;std::random_access_iterator RandomAccessIterator, class Compare&gt; </td></tr>
+<tr class="memitem:ab0ded302550a2b9c414fde3982743d47"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ab0ded302550a2b9c414fde3982743d47">insertion_sort</a> (RandomAccessIterator first, RandomAccessIterator last, Compare comp)</td></tr>
+<tr class="memdesc:ab0ded302550a2b9c414fde3982743d47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сортировка вставкой  <br /></td></tr>
+<tr class="separator:ab0ded302550a2b9c414fde3982743d47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8deb7b3bb25f8954690a3ed294e83ed4" id="r_a8deb7b3bb25f8954690a3ed294e83ed4"><td class="memTemplParams" colspan="2">template&lt;std::random_access_iterator RandomAccessIterator, class Compare&gt; </td></tr>
+<tr class="memitem:a8deb7b3bb25f8954690a3ed294e83ed4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a8deb7b3bb25f8954690a3ed294e83ed4">shaker_sort</a> (RandomAccessIterator first, RandomAccessIterator last, Compare comp)</td></tr>
+<tr class="memdesc:a8deb7b3bb25f8954690a3ed294e83ed4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Шейкер-сортировка  <br /></td></tr>
+<tr class="separator:a8deb7b3bb25f8954690a3ed294e83ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0233a03e3e9057f821e42b2b2621078f" id="r_a0233a03e3e9057f821e42b2b2621078f"><td class="memTemplParams" colspan="2">template&lt;std::random_access_iterator RandomAccessIterator, class Compare&gt; </td></tr>
+<tr class="memitem:a0233a03e3e9057f821e42b2b2621078f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a0233a03e3e9057f821e42b2b2621078f">merge</a> (RandomAccessIterator l_first, RandomAccessIterator l_last, RandomAccessIterator r_first, RandomAccessIterator r_last, Compare comp)</td></tr>
+<tr class="memdesc:a0233a03e3e9057f821e42b2b2621078f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для слияния двух отсортированных массивов при сортировке слиянием  <br /></td></tr>
+<tr class="separator:a0233a03e3e9057f821e42b2b2621078f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03567aaea15df41b00e55575ef7e7a9d" id="r_a03567aaea15df41b00e55575ef7e7a9d"><td class="memTemplParams" colspan="2">template&lt;std::random_access_iterator RandomAccessIterator, class Compare&gt; </td></tr>
+<tr class="memitem:a03567aaea15df41b00e55575ef7e7a9d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a03567aaea15df41b00e55575ef7e7a9d">merge_sort</a> (RandomAccessIterator first, RandomAccessIterator last, Compare comp)</td></tr>
+<tr class="memdesc:a03567aaea15df41b00e55575ef7e7a9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сортировка слиянием  <br /></td></tr>
+<tr class="separator:a03567aaea15df41b00e55575ef7e7a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57c1134313891979ecba86218706c890" id="r_a57c1134313891979ecba86218706c890"><td class="memItemLeft" align="right" valign="top">std::pair&lt; std::vector&lt; double &gt;, std::vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57c1134313891979ecba86218706c890">get_time</a> (int j, std::string algo)</td></tr>
+<tr class="memdesc:a57c1134313891979ecba86218706c890"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для замера времени работы сортировок  <br /></td></tr>
+<tr class="separator:a57c1134313891979ecba86218706c890"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">основная функция программы  <br /></td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Функции</h2>
+<a id="a57c1134313891979ecba86218706c890" name="a57c1134313891979ecba86218706c890"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57c1134313891979ecba86218706c890">&#9670;&#160;</a></span>get_time()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::pair&lt; std::vector&lt; double &gt;, std::vector&lt; double &gt; &gt; get_time </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>j</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>algo</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция для замера времени работы сортировок </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">j</td><td>число датасетов для сортивроки </td></tr>
+    <tr><td class="paramname">algo</td><td>какой алгоритм использовать </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>пара векторов значений (x,y), x - размеры датасетов, y - соотвествущее время сортивки (в сек.) для выборанного алгоритма </dd></dl>
+
+</div>
+</div>
+<a id="ab0ded302550a2b9c414fde3982743d47" name="ab0ded302550a2b9c414fde3982743d47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0ded302550a2b9c414fde3982743d47">&#9670;&#160;</a></span>insertion_sort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::random_access_iterator RandomAccessIterator, class Compare&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void insertion_sort </td>
+          <td>(</td>
+          <td class="paramtype">RandomAccessIterator</td>          <td class="paramname"><span class="paramname"><em>first</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RandomAccessIterator</td>          <td class="paramname"><span class="paramname"><em>last</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Compare</td>          <td class="paramname"><span class="paramname"><em>comp</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Сортировка вставкой </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">first</td><td>итератор на начало контейнера </td></tr>
+    <tr><td class="paramname">last</td><td>итератор на конец контейнера </td></tr>
+    <tr><td class="paramname">comp</td><td>фукнция сравнения </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>основная функция программы </p>
+<p>Считывание данных из датасетов, замер времени различных сортировок, запись отсортированных данных, постройка графиков </p>
+
+</div>
+</div>
+<a id="a0233a03e3e9057f821e42b2b2621078f" name="a0233a03e3e9057f821e42b2b2621078f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0233a03e3e9057f821e42b2b2621078f">&#9670;&#160;</a></span>merge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::random_access_iterator RandomAccessIterator, class Compare&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void merge </td>
+          <td>(</td>
+          <td class="paramtype">RandomAccessIterator</td>          <td class="paramname"><span class="paramname"><em>l_first</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RandomAccessIterator</td>          <td class="paramname"><span class="paramname"><em>l_last</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RandomAccessIterator</td>          <td class="paramname"><span class="paramname"><em>r_first</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RandomAccessIterator</td>          <td class="paramname"><span class="paramname"><em>r_last</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Compare</td>          <td class="paramname"><span class="paramname"><em>comp</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция для слияния двух отсортированных массивов при сортировке слиянием </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">l_first</td><td>итератор на начало 1-ого контейнера </td></tr>
+    <tr><td class="paramname">l_last</td><td>итератор на конец 1-ого контейнера </td></tr>
+    <tr><td class="paramname">r_first</td><td>итератор на начало 2-ого контейнера </td></tr>
+    <tr><td class="paramname">r_last</td><td>итератор на конец 2-ого контейнера </td></tr>
+    <tr><td class="paramname">comp</td><td>функция сравнения </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a03567aaea15df41b00e55575ef7e7a9d" name="a03567aaea15df41b00e55575ef7e7a9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03567aaea15df41b00e55575ef7e7a9d">&#9670;&#160;</a></span>merge_sort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::random_access_iterator RandomAccessIterator, class Compare&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void merge_sort </td>
+          <td>(</td>
+          <td class="paramtype">RandomAccessIterator</td>          <td class="paramname"><span class="paramname"><em>first</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RandomAccessIterator</td>          <td class="paramname"><span class="paramname"><em>last</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Compare</td>          <td class="paramname"><span class="paramname"><em>comp</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Сортировка слиянием </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">first</td><td>итератор на начало контейнера </td></tr>
+    <tr><td class="paramname">last</td><td>итератор на конец контейнера </td></tr>
+    <tr><td class="paramname">comp</td><td>фукнция сравнения </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0833866db39ce7c6349e6580405f9cbf" name="a0833866db39ce7c6349e6580405f9cbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0833866db39ce7c6349e6580405f9cbf">&#9670;&#160;</a></span>operator&lt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structSoldier.html">Soldier</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structSoldier.html">Soldier</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перегрузка оператора "&lt;" для сравнения объектов <a class="el" href="structSoldier.html" title="Строка из датасета">Soldier</a>. </p>
+<p>Сначала сравниваются подразделения, затем ФИО, затем зарплата. </p>
+
+</div>
+</div>
+<a id="a347ba8cb8f50c282fe1086a28fa844fd" name="a347ba8cb8f50c282fe1086a28fa844fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a347ba8cb8f50c282fe1086a28fa844fd">&#9670;&#160;</a></span>operator&lt;&lt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream &amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;</td>          <td class="paramname"><span class="paramname"><em>os</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>vec</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перегрузка оператора&lt;&lt; для вывода контейнера </p>
+
+</div>
+</div>
+<a id="a53b71b58913f4c835865a2c6273a87df" name="a53b71b58913f4c835865a2c6273a87df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53b71b58913f4c835865a2c6273a87df">&#9670;&#160;</a></span>operator&lt;=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator&lt;= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structSoldier.html">Soldier</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structSoldier.html">Soldier</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перегрузка оператора "&gt;" для сравнения объектов </p>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="structSoldier.html" title="Строка из датасета">Soldier</a></dd></dl>
+<p>Сначала сравниваются подразделения, затем ФИО, затем зарплата. </p>
+
+</div>
+</div>
+<a id="ad51dd6cc97a14667b99fab48f75bbb8a" name="ad51dd6cc97a14667b99fab48f75bbb8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad51dd6cc97a14667b99fab48f75bbb8a">&#9670;&#160;</a></span>operator&gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator&gt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structSoldier.html">Soldier</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structSoldier.html">Soldier</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перегрузка оператора "&lt;" для сравнения объектов </p>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="structSoldier.html" title="Строка из датасета">Soldier</a></dd></dl>
+<p>Сначала сравниваются подразделения, затем ФИО, затем зарплата. </p>
+
+</div>
+</div>
+<a id="a0497c92b072993e3068fa2cdbd70ee45" name="a0497c92b072993e3068fa2cdbd70ee45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0497c92b072993e3068fa2cdbd70ee45">&#9670;&#160;</a></span>operator&gt;=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator&gt;= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structSoldier.html">Soldier</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structSoldier.html">Soldier</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перегрузка оператора "&gt;=" для сравнения объектов </p>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="structSoldier.html" title="Строка из датасета">Soldier</a></dd></dl>
+<p>Сначала сравниваются подразделения, затем ФИО, затем зарплата. </p>
+
+</div>
+</div>
+<a id="abd77fabcf40d834e306b649d745b8166" name="abd77fabcf40d834e306b649d745b8166"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd77fabcf40d834e306b649d745b8166">&#9670;&#160;</a></span>read_csv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="structSoldier.html">Soldier</a> &gt; read_csv </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>filename</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Считать датасет военнослужащих </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>Имя датасета (например, "dataset_1.csv") </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Вектор объектов </dd></dl>
+
+</div>
+</div>
+<a id="a8deb7b3bb25f8954690a3ed294e83ed4" name="a8deb7b3bb25f8954690a3ed294e83ed4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8deb7b3bb25f8954690a3ed294e83ed4">&#9670;&#160;</a></span>shaker_sort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::random_access_iterator RandomAccessIterator, class Compare&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void shaker_sort </td>
+          <td>(</td>
+          <td class="paramtype">RandomAccessIterator</td>          <td class="paramname"><span class="paramname"><em>first</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RandomAccessIterator</td>          <td class="paramname"><span class="paramname"><em>last</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Compare</td>          <td class="paramname"><span class="paramname"><em>comp</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Шейкер-сортировка </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">first</td><td>итератор на начало контейнера </td></tr>
+    <tr><td class="paramname">last</td><td>итератор на конец контейнера </td></tr>
+    <tr><td class="paramname">comp</td><td>фукнция сравнения </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9a41066027416e4cb2d95c918e39d539" name="a9a41066027416e4cb2d95c918e39d539"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a41066027416e4cb2d95c918e39d539">&#9670;&#160;</a></span>split()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; split </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>str</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>del</em></span><span class="paramdefsep"> = </span><span class="paramdefval">'&#160;'</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Разделить строку по разделителю </p>
+<p>Функция позволяет разделить переданную строку (std::string) по разделителю (по умолчанию - пробел). Используется для считывания датасетов (.csv файл)</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>строка, которую нужно разделить </td></tr>
+    <tr><td class="paramname">del</td><td>разделитель </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Разделенную строку, представленную в виде вектора строк </dd></dl>
+
+</div>
+</div>
+<a id="a4ddbef7195d52bb61de2195823a00d42" name="a4ddbef7195d52bb61de2195823a00d42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ddbef7195d52bb61de2195823a00d42">&#9670;&#160;</a></span>write_csv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void write_csv </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>filename</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structSoldier.html">Soldier</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Записать вектор данных в .csv файл </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>имя файла </td></tr>
+    <tr><td class="paramname">data</td><td>вектор объектов </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="experiment_8cpp.html">experiment.cpp</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>
